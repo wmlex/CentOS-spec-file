@@ -1,0 +1,14 @@
+diff -Npru fcgiwrap-99c942c90063c73734e56bacaa65f947772d9186.orig/systemd/fcgiwrap.service fcgiwrap-99c942c90063c73734e56bacaa65f947772d9186/systemd/fcgiwrap.service
+--- fcgiwrap-99c942c90063c73734e56bacaa65f947772d9186.orig/systemd/fcgiwrap.service	2016-09-28 13:14:53.453472379 +0300
++++ fcgiwrap-99c942c90063c73734e56bacaa65f947772d9186/systemd/fcgiwrap.service	2016-09-28 13:15:50.473377216 +0300
+@@ -4,8 +4,8 @@ After=nss-user-lookup.target
+ 
+ [Service]
+ ExecStart=/usr/sbin/fcgiwrap
+-User=http
+-Group=http
++User=nginx
++Group=nginx
+ 
+ [Install]
+ Also=fcgiwrap.socket
